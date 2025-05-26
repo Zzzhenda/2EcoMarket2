@@ -25,6 +25,7 @@ public class AuthController {
     public ResponseEntity<String> login(@RequestBody LoginRequest loginRequest) {
         boolean authenticated = authService.login(loginRequest);
         if (authenticated) {
+            //responseEntity = respuestas
             return ResponseEntity.ok("Login exitoso");
         } else {
             return ResponseEntity.status(401).body("Email o clave incorrecta");
