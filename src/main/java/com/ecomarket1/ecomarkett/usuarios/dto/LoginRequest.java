@@ -1,5 +1,5 @@
 package com.ecomarket1.ecomarkett.usuarios.dto;
-//clase simple que solo tiene los datos que quieres recibir o enviar en una petición.
+// D T O = DATA TRANSFER OBJECT. OBJETO PARA LOGIN
 
 import lombok.Data;
 
