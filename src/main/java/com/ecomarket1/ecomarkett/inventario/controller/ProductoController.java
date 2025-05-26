@@ -24,19 +24,19 @@ private final ProductoService productoService;
         this.productoService = productoService;
     }
 
-    // Endpoint to get all products
+    // Endpoint para obtenerproductos
     @GetMapping
     public List<Producto> getAllProductos() {
         return productoService.getAllProductos();
     }
 
-    // Endpoint to get a product by ID
+    // Endpoint para obtener productos por id
     @GetMapping("/{id}")
     public Producto getProductoById(@PathVariable Long id) {
         return productoService.getProductoById(id);
     }
 
-    // Endpoint to create a new product
+    // Endpoint para crear productos
     @PostMapping
     public Producto createProducto(@RequestBody Producto producto) {
         return productoService.createProducto(producto);
@@ -46,7 +46,7 @@ private final ProductoService productoService;
 public Producto updateProducto(@PathVariable Long id, @RequestBody Producto producto) {
     return productoService.updateProducto(id, producto);
 }
-    // Endpoint to delete a product
+    // Endpoint para eliminar un producto por id
     @DeleteMapping("/{id}")
     public void deleteProducto(@PathVariable Long id) {
         productoService.deleteProducto(id);
