@@ -3,11 +3,17 @@
 MICROSERVICIOS: 
 
 -AUTH SERVICE              :X
+
 -USUARIOS                  :X
+
 -INVENTARIO SERVICE        :X
--VENTAS SERVICE            :
+
+-VENTAS SERVICE            :X
+
 -LOGISTICA SERVICE         :
+
 -REPORTES SERVICE          :
+
 
 git clone https://github.com/Zzzhenda/2EcoMarket2.git
 
